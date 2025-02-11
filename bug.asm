@@ -1,0 +1,2 @@
+mov eax, [ebx+ecx*4] ; This line is problematic if ecx is too large and causes an access violation. 
+mov [edi+eax*4], 0 ; This line can also cause an error if eax is too large or edi points to an invalid memory location.
